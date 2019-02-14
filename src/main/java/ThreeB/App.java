@@ -1,5 +1,7 @@
 package ThreeB;
 
+import javax.swing.*;
+
 /**
  * @Author Jaco De Beer
  *
@@ -15,5 +17,9 @@ public class App
         int firstValue = (int) (Math.random()*20);
         int secondValue = (int) (Math.random()*20);
         System.out.println(firstValue + " + " + secondValue +" = "+(firstValue+secondValue));
+
+        String name = JOptionPane.showInputDialog("Please enter your name.");
+        String nameAndLuckyNumber = name + " your lucky number is : " + (firstValue+secondValue);
+        JOptionPane.showMessageDialog(null, nameAndLuckyNumber);
     }
 }
